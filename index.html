@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  import { Analytics } from '@vercel/analytics/react';
   <title>অনামিকা ঐশী</title>
   <link rel="icon" href="images.jpg" title="" type="" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -78,6 +79,8 @@ i{
     </style>
 </head>
 <body>
+  <Analytics />
+  
     <div class="container">
         <img src="images.jpg" alt="Your Image">
         <i id="showAlert" class='fa fa-play-circle'></i>
